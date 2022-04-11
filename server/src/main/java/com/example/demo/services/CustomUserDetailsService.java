@@ -35,7 +35,6 @@ public class CustomUserDetailsService implements UserDetailsService {
         return userRepository.findUserById(id).orElse(null);
     }
 
-
     public static User build(User user) {
         List<GrantedAuthority> authorities = user.getRoles().stream()
                 .map(role -> new SimpleGrantedAuthority(role.name()))
@@ -48,8 +47,4 @@ public class CustomUserDetailsService implements UserDetailsService {
                 user.getPassword(),
                 authorities);
     }
-
-
-
-
 }

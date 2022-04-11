@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class InstazooApplication {
+public class InstagornyiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(InstazooApplication.class, args);
+		SpringApplication.run(InstagornyiApplication.class, args);
 	}
 
 }
